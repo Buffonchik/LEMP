@@ -37,6 +37,6 @@
   - name: "Remove test database"
     community.mysql.mysql_db:
       name: "test"
-      state: "adsent"
+      state: "absent"
       login_user: "root"
       login_password: "password"
