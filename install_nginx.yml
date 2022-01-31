@@ -1,0 +1,12 @@
+# install nginx
+
+---
+- hosts: "all"
+  become: true
+  tasks:
+  - name: "Install nginx using APT"
+    ansible.builtin.apt:
+      name: "nginx"
+      state: "latest"
+      update_cache: true
+
